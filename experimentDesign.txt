@@ -1,0 +1,16 @@
+
+Will be running experiment on option with 
+v = 0.2
+r = 0.05
+S0=100
+K= 100
+T = 1
+
+
+First generate GBM matrix of 
+N = 320
+P = 1000
+
+So then can use Ns derived from original GBM matrix
+10,20,40,80,160,320
+
