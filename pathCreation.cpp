@@ -126,7 +126,7 @@ std::vector<std::vector<double>> readVectorFromCSV(const std::string& filename) 
 
 int main() {
 
-    int N = 320;
+    int N = 1000;
     int P = 1000;
 
     double T = 1;
@@ -139,7 +139,7 @@ int main() {
             P, So, T/N, N, r, v, 42
     );
 
-    writeVectorToCSV("matrix320.csv", 
+    writeVectorToCSV("GBM1.csv", 
                       GBM,
                       6);
 

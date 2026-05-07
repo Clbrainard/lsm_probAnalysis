@@ -18,7 +18,9 @@ def save_matrix(matrix: list[list[float]], filepath: str) -> None:
 N = 320
 P = 1000
 
-moves = [5,10,20,40,80,160,320]
+moves = [1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 125, 200, 250, 500, 1000]
+
+
 
 outputFolder = "TestSet1"
 srcMatrix = "GBM1.csv"

@@ -387,7 +387,7 @@ std::vector<double> getStoppingTimes(
 }
 
 int main() {
-    std::vector<int> Ns = {5,10, 20, 40, 80, 160, 320};
+    std::vector<int> Ns = {2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 125, 200, 250, 500, 1000};
 
     std::ofstream out("stops.csv");
     out << std::fixed << std::setprecision(6);
@@ -397,7 +397,7 @@ int main() {
 
         std::vector<std::vector<double>> srcMatrix = load_csv(inFile);
         std::vector<double> stops = getStoppingTimes(
-            100, 1, N, 1000, 0.05, 0.2, 100, 1, srcMatrix
+            100, 1, N, 1000, 0.05, 0.2, 95, 1, srcMatrix
         );
 
         for (size_t i = 0; i < stops.size(); ++i) {
